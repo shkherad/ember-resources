@@ -1,5 +1,13 @@
 {{#each model as |list|}}
-  {{listr-list/card list=list}}
+  {{listr-list/card list=list
+                    delete='delete'
+                    edit='edit'
+                    }}
 {{/each}}
+
+{{listr-list/new submit='create'
+                 delete='delete'
+}}
+
 
 {{outlet}}

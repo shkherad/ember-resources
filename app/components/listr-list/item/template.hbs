@@ -1,1 +1,8 @@
-<li {{action 'toggleDone'}}>{{item.content}}</li>
+
+<li>
+    <span {{action 'click'}} >{{item.content}}</span>
+    <button class="btn btn-xs btn-danger"
+      {{action 'delete' }}>
+      DELETE
+    </button>
+</li>
